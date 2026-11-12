@@ -44,20 +44,20 @@ Before developing the machine learning models, our team will clean and prepare t
 
 Categorical variables, including Gender, Company Type, and WFH Setup Available, will be converted into numerical representations using one-hot encoding. Numerical variables will be standardized when necessary, particularly for models sensitive to differences in feature scales. Employee ID will be excluded because it does not provide meaningful predictive information. We will also conduct exploratory data analysis using histograms, boxplots, scatterplots, and correlation analysis to better understand how workplace characteristics relate to burnout. Data will be divided into training and testing sets, with preprocessing methods fitted only on the training data to prevent data leakage.
 
-## Proposed Machine Learning Methodology
+# Proposed Machine Learning Methodology
 
 Our team will evaluate several supervised regression algorithms to predict employee burnout levels and determine which model provides the most accurate and reliable results.
 
-# Multiple Linear Regression: 
+### Multiple Linear Regression: 
 This model will establish a baseline for predicting employee burnout and help evaluate the direction and strength of relationships between workplace characteristics and burnout levels.
 
-# Decision Tree Regression: 
+### Decision Tree Regression: 
 A Decision Tree will capture potential nonlinear relationships between employee characteristics and burnout. It will also provide interpretable decision rules to better understand which conditions are associated with higher burnout.
 
-# Random Forest Regression: 
+### Random Forest Regression: 
 Random Forest will combine multiple decision trees to improve predictive performance and reduce overfitting. Feature importance analysis will help identify the workplace characteristics most strongly associated with burnout.
 
-# Gradient Boosting Regression: 
+### Gradient Boosting Regression: 
 Gradient Boosting will be used to determine whether sequentially improving predictions can provide greater accuracy than the other regression models.
 
 The project will be completed using Python, primarily with Pandas, NumPy, Scikit-learn, Matplotlib, and Seaborn. Our team will conduct exploratory data analysis, preprocessing, model development, hyperparameter tuning, and model comparison.
